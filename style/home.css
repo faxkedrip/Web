@@ -98,7 +98,7 @@ html::-webkit-scrollbar-thumb{
     background-color: var(--dark-orange);
 }
 
-.header .header-2 .active{
+.header .header-2.active{
     position:fixed;
     top: 0;
     left: 0;
@@ -106,10 +106,33 @@ html::-webkit-scrollbar-thumb{
 
 }
 
+.header .header-2 .active{
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    z-index: 1000;
+}
+
+.mobile-navbar{
+    text-align: center;
+    background: var(--orange);
+    position: fixed;
+    bottom: 0;right: 0;left: 0;
+    z-index: 1000;
+    display: none;
+}
+
+.mobile-navbar a{
+    font-size: 2.5rem;
+    padding: 2rem;
+    color: #fff;
+}
+
+.mobile-navbar a:hover{
+    background: var(--dark-orange);
+}
+
 .home{
-    background: url(../image/background.jpg) no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
+    background-color: #e9e6e6;
 }
 
 .home .row{
@@ -147,10 +170,14 @@ html::-webkit-scrollbar-thumb{
 }
 
 .home .row .content p{
-    color:var(--black);
+    color:var(--light-color);
     font-size:1.4rem;
     line-height: 2;
     padding:1rem 0;
+}
+
+.home .row .content{
+    text-align: center;
 }
 
 section{
@@ -211,9 +238,27 @@ section{
     border:var(--border-hover);
 }
 
-.best-books .best-slider .book img{
+.best-books .best-slider .book .image img{
     height: 25rem;
 }
+
+.best-books .best-slider .book .content{
+    background: #eee;
+    padding: var(--black);
+}
+
+.best-books .best-slider .book .content h3{
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.best-books .best-slider .book .content .price{
+    font-size: 2.2rem;
+    color: var(--black);
+    padding-top: 1rem;
+}
+
+
 
 
 @media (max-width: 991px){
@@ -245,6 +290,14 @@ section{
         transform: translateY(-50%);
         right: 7rem;
     }
+
+    .header .header-2{
+        display: none;
+    }
+
+    .mobile-navbar{
+        display: block;
+    }
 }
 
 @media (max-width: 450px){
@@ -256,18 +309,13 @@ section{
     }
 }
 
-@media screen and (max-width: 450px) {
-    .row.primary {
-      grid-template-columns: 1fr;
-    }
-}
 
 
 footer{
     background-color: #121315;
     color: #a7a7a7;
     font-size: 1.3rem;
-    ul {
+    ul{
         list-style: none;
         display: flex;
         flex-direction: column;
@@ -292,6 +340,10 @@ footer{
         text-align: justify;
         line-height: 2;
         margin: 0;
+    }
+
+    .icon-links{
+        text-align: center;
     }
 }
 
@@ -318,10 +370,6 @@ footer*{
 .copyright p{
     font-size: 0.9em;
     text-align: right;
-}
-
-.footer-menu a:hover{
-    color: #fff;
 }
 
 .column{

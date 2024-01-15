@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     <header class="header">
@@ -31,31 +32,41 @@
             </nav>
         </div>
     </header>
+
+    <nav class="mobile-navbar">
+        <a href="#home">Нийтийн ном</a>
+        <a href="#hoeme">Хүүхдийн ном</a>
+        <a href="#hosme">Гадаад ном</a>
+        <a href="#hodme">Бичиг хэрэг</a>
+        <a href="#a">Тэмдэглэл дэвтэр, хуанли</a>
+        <a href="#gat">Ангилал</a>
+    </nav>
+
     <section class="home" id="home">
         <div class="row">
-            <article class="content">
+            <div class="content">
                 <h3>Шинэ ном</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis dolore accusantium corrupti at dolorum est adipisci iure placeat optio autem architecto, quibusdam beatae porro reiciendis veniam enim esse dolorem. Eligendi?</p>
-            </article>
+            </div>
             <!--Book slide-->
-            <div class="book-slider">
-                <div class="wrapper">
+            <div class="swiper book-slider">
+                <div class="swiper-wrapper">
                     <!--books-->
-                    <a href="#"><img src="image/book1.jpg" alt=""></a>
-                    <a href="#"><img src="image/book2.jpg" alt=""></a>
-                    <a href="#"><img src="image/book3.jpg" alt=""></a>
-                    <a href="#"><img src="image/book4.jpg" alt=""></a>
-                    <a href="#"><img src="image/book5.jpg" alt=""></a>
-                    <a href="#"><img src="image/book6.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="image/book1.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="image/book2.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="image/book3.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="image/book4.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="image/book5.jpg" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="image/book6.jpg" alt=""></a>
                 </div>
             </div>
         </div>
     </section>
     <section class="best-books" id="best books">
         <h1 class="TBestheader"><span>Шилдэг номнууд</span></h1>
-        <div class="best-slider">
-            <div class="wrapper">
-                <div class="book">
+        <div class="swiper best-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide book">
                     <div class="image">
                         <img src="image/book1.jpg" alt="">
                     </div>
@@ -65,7 +76,7 @@
                         <a href="#" class="btn">Сагсанд хийх</a>
                     </div>
                 </div>
-                <div class="book">
+                <div class="swiper-slide book">
                     <div class="image">
                         <img src="image/book2.jpg" alt="">
                     </div>
@@ -85,7 +96,7 @@
                         <a href="#" class="btn">Сагсанд хийх</a>
                     </div>
                 </div>
-                <div class="book">
+                <div class="swiper-slide book">
                     <div class="image">
                         <img src="image/book4.jpg" alt="">
                     </div>
@@ -95,7 +106,7 @@
                         <a href="#" class="btn">Сагсанд хийх</a>
                     </div>
                 </div>
-                <div class="book">
+                <div class="swiper-slide book">
                     <div class="image">
                         <img src="image/book5.jpg" alt="">
                     </div>
@@ -105,7 +116,7 @@
                         <a href="#" class="btn">Сагсанд хийх</a>
                     </div>
                 </div>
-                <div class="book">
+                <div class="swiper-slide book">
                     <div class="image">
                         <img src="image/book6.jpg" alt="">
                     </div>
@@ -121,10 +132,9 @@
     <footer>
         <div class="row primary">
             <div class="column about">
-                <h3>Foolish Developer</h3>
+                <img src="image/azhur_logo1.png" alt="hey" style="width: 13rem;">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
-                    voluptatem corporis error non,
+                    Азхур ХХК нь 2015 оны 9-р сард Олон улсын жишиг стандартад нийцсэн хаягжуулалт, номын нөөцтэй, Монголдоо хамгийн том буюу 1000м.кв талбайд 10 мянга гаруй нэр төрлийн номын сонголттой
                 </p>
             </div>
             <div class="column-links">
@@ -156,17 +166,18 @@
                     </li>
                 </ul>
             </div>
-        </div>    
-        <div class="row copyright">
-            <div class="footer-menu"> 
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Contact</a>
-                <a href="">Blog</a>
-                <a href="">Social</a>
-            </div>
+        </div>
+        <div class="icon-links">
+            <ul class="iconss">
+                <li><a href="#"><img src="image/facebook_logo.png" alt="facebook icon"></a></li>
+                <li><a href="#"><img src="image/twitter_logo.png"  alt="twt"></a></li>
+                <li><a href="#"><img src="image/youtube_logo.png"  alt="yt"></a></li>
+                <li><a href="#"><img src="image/instagram_logo.png" alt="inst"></a></li>
+            </ul>
             <p>Copyright &copy; 2024 Az Khur All Rights Reserved.</p>
         </div>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
