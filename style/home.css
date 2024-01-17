@@ -343,7 +343,7 @@ section{
         font-size: 50%;
     }
     .header .header-1 .search-logo-solo {
-        display: none;
+        display: block;
     }
 }
 
@@ -397,7 +397,7 @@ footer*{
 
 .row.primary{
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
     align-items: stretch;
 }
 
