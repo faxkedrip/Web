@@ -199,7 +199,7 @@ section{
 
 .TBestheader span{
     font-size: 3rem;
-    padding: 5rem 2rem;
+    padding: 2rem 2rem;
     color:var(--black);
     background: #fff;
     border:var(--border);
@@ -263,6 +263,37 @@ section{
 .swiper-button-prev:hover{
     background: var(--black);
     color: #fff;
+}
+
+.reviews .reviews-slider .client{
+    width: 30rem;
+    border:var(--border);
+    padding: 2rem;
+    text-align: center;
+}
+
+.reviews .reviews-slider .client:hover{
+    border:var(--border-hover);
+}
+
+.reviews .reviews-slider .client img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviews .reviews-slider .client h3{
+    color: var(--black);
+    font-size: 2.2rem;
+    padding: .5rem 0;
+}
+
+.reviews .reviews-slider .client p{
+    color: var(--black);
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    line-height: 2;
 }
 
 @media (max-width: 991px){
