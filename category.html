@@ -5,140 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filtered by Category</title>
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/category.css">
 </head>
 <body>
-    <header>
-        <h1>Most Viewed Books</h1>
-        <style>
-            body {
-                font-family: 'Poppins', sans-serif;
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                background-color: #f4f4f4;
-                color: var(--black);
-            }
-    
-            header {
-                background: var(--orange);
-                color: #fff;
-                text-align: center;
-                padding: 2rem;
-            }
-    
-            nav {
-                background: #eee;
-                padding: 1rem;
-                text-align: center;
-            }
-    
-            nav ul {
-                list-style: none;
-                display: flex;
-                justify-content: center;
-            }
-    
-            nav ul li {
-                margin: 0 1rem;
-            }
-    
-            nav ul li a {
-                text-decoration: none;
-                color: var(--black);
-                font-size: 1.5rem;
-                padding: 0.5rem 1rem;
-                border-radius: 0.3rem;
-                background: #fff;
-                transition: background 0.3s;
-            }
-    
-            nav ul li a:hover {
-                background: var(--dark-orange);
-                color: #fff;
-            }
-    
-            section {
-                padding: 5rem 9%;
-            }
-    
-            .book-list {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 2rem;
-                justify-content: center;
-            }
-    
-            .book {
-                width: 25rem;
-                margin: 2rem 0;
-                position: relative;
-                overflow: hidden;
-                border: var(--border);
-                text-align: center;
-                transition: border-color 0.3s;
-            }
-    
-            .book:hover {
-                border-color: var(--dark-orange);
-            }
-    
-            .book img {
-                height: 25rem;
-                object-fit: cover;
-            }
-    
-            .book h3 {
-                font-size: 2rem;
-                color: var(--black);
-                margin: 1rem 0;
-            }
-    
-            .book p {
-                font-size: 1.6rem;
-                color: var(--light-color);
-            }
-    
-            footer {
-                background-color: #121315;
-                color: #a7a7a7;
-                font-size: 1.3rem;
-                padding: 2rem 0;
-                text-align: center;
-            }
-    
-            footer ul {
-                list-style: none;
-                display: flex;
-                flex-direction: column;
-                padding: 0;
-                margin: 0;
-            }
-    
-            footer li:not(:first-child) {
-                margin-top: 0.8em;
-            }
-    
-            footer ul li a {
-                color: #a7a7a7;
-                text-decoration: none;
-                transition: color 0.3s;
-            }
-    
-            footer ul li a:hover {
-                color: var(--orange);
-            }
-    
-            .about p {
-                text-align: justify;
-                line-height: 2;
-                margin: 0;
-            }
-    
-            .icon-links {
-                text-align: center;
-            }
-    
-        </style>
+    <header class="header">
+        <article class="header-1">
+            <img src="image/azhur_logo.png" alt="azhur_logo" class="azhur_logo">
+            <form action="" class="search-form">
+                <input type="search" name="" placeholder="Ном хайх" id="search-bar">
+                <label for="search-button" class="search-logo" id="search-btn">
+                    <img src="image/search_logo.png" alt="Search Logo" class="search-logo">
+                </label>
+            </form>
+                <img src="image/search_logo.png" alt="Search Logo" class="search-logo-solo">
+                <img src="image/shopping_cart.png" alt="Search Logo" class="shopping_cart">
+        </article>
     </header>
 
     <nav>
@@ -155,13 +36,12 @@
         <p>Description of the most viewed category.</p>
 
         <div class="book-list">
-            <!-- Display most viewed books here -->
             <article class="book">
                 <img src="image/book1.jpg" alt="Book 1">
                 <h3>Book Title 1</h3>
                 <p>Author: Author Name</p>
                 <p>Price: $19.99</p>
-                <!-- Add more book details as needed -->
+                <a href="#" class="btn">Сагсанд хийх</a>
             </article>
 
             <article class="book">
@@ -169,14 +49,186 @@
                 <h3>Book Title 2</h3>
                 <p>Author: Author Name</p>
                 <p>Price: $24.99</p>
+                <a href="#" class="btn">Сагсанд хийх</a>
             </article>
 
-            <!-- Add more book articles for the most viewed category -->
+            <article class="book">
+                <img src="image/book3.jpg" alt="Book 2">
+                <h3>Book Title 2</h3>
+                <p>Author: Author Name</p>
+                <p>Price: $24.99</p>
+                <a href="#" class="btn">Сагсанд хийх</a>
+            </article>
+
+            <article class="book">
+                <img src="image/book4.jpg" alt="Book 2">
+                <h3>Book Title 2</h3>
+                <p>Author: Author Name</p>
+                <p>Price: $24.99</p>
+                <a href="#" class="btn">Сагсанд хийх</a>
+            </article>
+
+            <article class="book">
+                <img src="image/book5.jpg" alt="Book 2">
+                <h3>Book Title 2</h3>
+                <p>Author: Author Name</p>
+                <p>Price: $24.99</p>
+                <a href="#" class="btn">Сагсанд хийх</a>
+            </article>
+
+            <article class="book">
+                <img src="image/book6.jpg" alt="Book 2">
+                <h3>Book Title 2</h3>
+                <p>Author: Author Name</p>
+                <p>Price: $24.99</p>
+                <a href="#" class="btn">Сагсанд хийх</a>
+            </article>
+
+            <article class="book">
+                <img src="image/book1.jpg" alt="Book 2">
+                <h3>Book Title 2</h3>
+                <p>Author: Author Name</p>
+                <p>Price: $24.99</p>
+                <a href="#" class="btn">Сагсанд хийх</a>
+            </article>
+
+            <article class="book">
+                <img src="image/book1.jpg" alt="Book 2">
+                <h3>Book Title 2</h3>
+                <p>Author: Author Name</p>
+                <p>Price: $24.99</p>
+                <a href="#" class="btn">Сагсанд хийх</a>
+            </article>
+
+            <article class="book">
+                <img src="image/book1.jpg" alt="Book 2">
+                <h3>Book Title 2</h3>
+                <p>Author: Author Name</p>
+                <p>Price: $24.99</p>
+                <a href="#" class="btn">Сагсанд хийх</a>
+            </article>
+
+            <article class="book">
+                <img src="image/book1.jpg" alt="Book 2">
+                <h3>Book Title 2</h3>
+                <p>Author: Author Name</p>
+                <p>Price: $24.99</p>
+                <a href="#" class="btn">Сагсанд хийх</a>
+            </article>
+
+            <article class="book">
+                <img src="image/book1.jpg" alt="Book 2">
+                <h3>Book Title 2</h3>
+                <p>Author: Author Name</p>
+                <p>Price: $24.99</p>
+                <a href="#" class="btn">Сагсанд хийх</a>
+            </article>
+
+            <article class="book">
+                <img src="image/book1.jpg" alt="Book 2">
+                <h3>Book Title 2</h3>
+                <p>Author: Author Name</p>
+                <p>Price: $24.99</p>
+                <a href="#" class="btn">Сагсанд хийх</a>
+            </article>
+
+            <article class="book">
+                <img src="image/book1.jpg" alt="Book 2">
+                <h3>Book Title 2</h3>
+                <p>Author: Author Name</p>
+                <p>Price: $24.99</p>
+                <a href="#" class="btn">Сагсанд хийх</a>
+            </article>
+
+            <article class="book">
+                <img src="image/book1.jpg" alt="Book 2">
+                <h3>Book Title 2</h3>
+                <p>Author: Author Name</p>
+                <p>Price: $24.99</p>
+                <a href="#" class="btn">Сагсанд хийх</a>
+            </article>
+
+            <article class="book">
+                <img src="image/book1.jpg" alt="Book 2">
+                <h3>Book Title 2</h3>
+                <p>Author: Author Name</p>
+                <p>Price: $24.99</p>
+                <a href="#" class="btn">Сагсанд хийх</a>
+            </article>
+
+            <article class="book">
+                <img src="image/book1.jpg" alt="Book 2">
+                <h3>Book Title 2</h3>
+                <p>Author: Author Name</p>
+                <p>Price: $24.99</p>
+                <a href="#" class="btn">Сагсанд хийх</a>
+            </article>
+
+            <article class="book">
+                <img src="image/book1.jpg" alt="Book 2">
+                <h3>Book Title 2</h3>
+                <p>Author: Author Name</p>
+                <p>Price: $24.99</p>
+                <a href="#" class="btn">Сагсанд хийх</a>
+            </article>
+
+            <article class="book">
+                <img src="image/book1.jpg" alt="Book 2">
+                <h3>Book Title 2</h3>
+                <p>Author: Author Name</p>
+                <p>Price: $24.99</p>
+                <a href="#" class="btn">Сагсанд хийх</a>
+            </article>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Bookstore. All rights reserved.</p>
+        <section class="row primary">
+            <article class="column about">
+                <img src="image/azhur_logo1.png" alt="hey" style="width: 13rem;">
+                <p>
+                    Азхур ХХК нь 2015 оны 9-р сард Олон улсын жишиг стандартад нийцсэн хаягжуулалт, номын нөөцтэй, Монголдоо хамгийн том буюу 1000м.кв талбайд 10 мянга гаруй нэр төрлийн номын сонголттой
+                </p>
+            </article>
+            <article class="column-links">
+                <ul>
+                    <li>
+                        <a href="#">Тусламж</a>
+                    </li>
+                    <li>
+                        <a href="#">Зохиолчид</a>
+                    </li>
+                    <li>
+                        <a href="#">Салбарууд</a>
+                    </li>
+                    <li>
+                        <a href="#">Танилцуулга</a>
+                    </li>
+                </ul>
+            </article>
+            <article class="column-links">
+                <ul>
+                    <li>
+                        <a href="#">Улаанбаатар хот, Сүхбаатар дүүрэг Тээвэрчдийн гудамж-27, Нарны зам</a>
+                    </li>
+                    <li>
+                        <a href="#">+976 7000-4343</a>
+                    </li>
+                    <li>
+                        <a href="#">info@azkhur.mn</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="icon-links">
+            <div class="iconss">
+                <a href="#"><img src="image/facebook_logo.png" alt="facebook icon"></a>
+                <a href="#"><img src="image/twitter_logo.png"  alt="twt"></a>
+                <a href="#"><img src="image/youtube_logo.png"  alt="yt"></a>
+                <a href="#"><img src="image/instagram_logo.png" alt="inst"></a>
+            </div>
+            <p>Copyright &copy; 2024 Az Khur All Rights Reserved.</p>
+        </section>
     </footer>
 </body>
 </html>

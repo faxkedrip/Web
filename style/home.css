@@ -72,22 +72,6 @@ section{
     border:var(--border);
 }
 
-.btn{
-    margin-top: 1rem;
-    display: inline-block;
-    padding: .9rem 3rem;
-    border-radius: .5rem;
-    color:#fff;
-    background: var(--orange);
-    font-size: 1.7rem;
-    cursor: pointer;
-    font-weight: 500;
-}
-
-.btn:hover{
-    background: var(--dark-orange);
-}
-
 .best-books .best-slider .book{
     width: 25rem;
     margin:2rem 0;

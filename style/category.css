@@ -1,0 +1,124 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: var(--black);
+}
+
+nav {
+    background: #eee;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    background: #fff;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: var(--dark-orange);
+    color: #fff;
+}
+
+section {
+    padding: 5rem 9%;
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.book {
+    width: 25rem;
+    margin: 2rem 0;
+    position: relative;
+    overflow: hidden;
+    border: var(--border);
+    text-align: center;
+    transition: border-color 0.3s;
+}
+
+.book:hover {
+    border-color: var(--dark-orange);
+}
+
+.book img {
+    height: 25rem;
+    object-fit: cover;
+}
+
+.book h3 {
+    font-size: 2rem;
+    color: var(--black);
+    margin: 1rem 0;
+}
+
+.book p {
+    font-size: 1.6rem;
+    color: var(--light-color);
+}
+
+footer {
+    background-color: #121315;
+    color: #a7a7a7;
+    font-size: 1.3rem;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+footer li:not(:first-child) {
+    margin-top: 0.8em;
+}
+
+footer ul li a {
+    color: #a7a7a7;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: var(--orange);
+}
+
+.about p {
+    text-align: justify;
+    line-height: 2;
+    margin: 0;
+}
+
+.icon-links {
+    text-align: center;
+}
+
+h2 ,p{
+    text-align: center;
+}

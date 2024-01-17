@@ -126,6 +126,22 @@ html::-webkit-scrollbar-thumb{
     background: var(--dark-orange);
 }
 
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    border-radius: .5rem;
+    color:#fff;
+    background: var(--orange);
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn:hover{
+    background: var(--dark-orange);
+}
+
 @media (max-width: 991px){
     html{
         font-size: 55%;
@@ -251,3 +267,4 @@ footer*{
     padding: 0 2em;
     min-height: 15em;
 }
+
