@@ -103,14 +103,9 @@ html::-webkit-scrollbar-thumb{
     top: 0;
     left: 0;
     right: 0;
-
-}
-
-.header .header-2 .active{
-    position: fixed;
-    top: 0;left: 0;right: 0;
     z-index: 1000;
 }
+
 
 .mobile-navbar{
     text-align: center;
