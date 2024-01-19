@@ -1,0 +1,32 @@
+.author{
+    border: var(--border);
+    margin: 4rem 0;
+    width: 25rem;
+    position: relative;
+    text-align: center;
+}
+
+.author:hover{
+    border-color: var(--dark-orange);
+}
+
+.author h3{
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.author p{
+    margin: 0;
+    color: #666;
+}
+
+.author hr{
+    margin-top: 10px;
+}
+
+.authorContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}

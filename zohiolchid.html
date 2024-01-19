@@ -6,6 +6,7 @@
     <title>Authors</title>
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/category.css">
+    <link rel="stylesheet" href="style/author.css">
 </head>
 <body>
     <header class="header">
@@ -35,15 +36,31 @@
     <section>
         <h2>Authors</h2>
         <p>Blahfeauindjofjkda dfasdfe.</p>
-        <div id="authorContainer"></div>
+        <div id="authorContainer" class="authorContainer"></div>
     </section>
-    <script src="authors.json"></script>
     <script>
-        function AuthorElement() {
+        function fetchAndDisplayAuthors() {
+            fetch('authors.json')
+                .then(response => response.json())
+                .then(authorsData => {
+                    const authorContainer = document.getElementById("authorContainer");
+                    authorsData.forEach(author => {
+                        const authorElement = document.createElement("div");
+                        authorElement.classList.add("author");
 
+                        authorElement.innerHTML = `
+                            <img src="${author.pic}" style="width: 25rem">
+                            <h3>${author.name}</h3>
+                            <p>Birthdate: ${author.birthdate}</p>
+                            <p>Country: ${author.country}</p>
+                        `;
+                        authorContainer.appendChild(authorElement);
+                    });
+                })
+                .catch(error => console.error('Error fetching data:', error));
         }
+        fetchAndDisplayAuthors();
     </script>
-
     <footer>
         <section class="row primary">
             <article class="column about">
