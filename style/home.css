@@ -1,5 +1,9 @@
 .home{
-    background-color: #e9e6e6;
+    background-image: url(../image/background2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 .home .row{
@@ -28,15 +32,19 @@
 }
 
 .home .row .content h3{
-    color:var(--black);
+    color: #c1b123;
     font-size:4.5rem;
 }
 
 .home .row .content p{
-    color:var(--light-color);
+    color:#949090;
     font-size:1.4rem;
     line-height: 2;
     padding:1rem 0;
+}
+
+.home .row .content p:hover{
+    color: #eee;
 }
 
 .home .row .content{

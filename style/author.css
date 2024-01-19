@@ -1,6 +1,6 @@
 .author{
     border: var(--border);
-    margin: 4rem 0;
+    margin: 2rem 0;
     width: 25rem;
     position: relative;
     text-align: center;
@@ -8,6 +8,12 @@
 
 .author:hover{
     border-color: var(--dark-orange);
+    .NyamNyam{
+        background-color: var(--orange);
+    }
+    h3,p{
+        color: black;
+    }
 }
 
 .author h3{
@@ -29,4 +35,12 @@
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
+}
+
+img{
+    border-radius: 50%;
+}
+
+.NyamNyam{
+    background-color: #e9e6e6;
 }

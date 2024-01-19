@@ -9,13 +9,15 @@ function fetchAndDisplayAuthors() {
   
                 authorElement.innerHTML = `
                     <img src="${author.pic}" style="width: 25rem">
-                    <h3>${author.name}</h3>
-                    <p>Birthdate: ${author.birthdate}</p>
-                    <p>Country: ${author.country}</p>
+                    <article class="NyamNyam">
+                        <h3>${author.name}</h3>
+                        <p>Birthdate: ${author.birthdate}</p>
+                        <p>Country: ${author.country}</p>
+                    </article>
                 `;
                 authorContainer.appendChild(authorElement);
             });
         })
         .catch(error => console.error('Error fetching data:', error));
-  }
-  fetchAndDisplayAuthors();
+}
+fetchAndDisplayAuthors();
