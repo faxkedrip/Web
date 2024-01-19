@@ -222,21 +222,5 @@
         "birthdate":"1981-08-13",
         "country":"American",
         "pic":"image/client.png"
-    },
-    {
-        "id":29,
-        "name":"Joe",
-        "about": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem maxime commodi omnis minima officiis. Doloribus sit maxime sapiente quo dolor voluptates cupiditate sunt impedit dicta. Tempore dolorem autem neque sequi?",
-        "birthdate":"1980-11-12",
-        "country":"American",
-        "pic":"image/client.png"
-    },
-    {
-        "id":30,
-        "name":"Songbird",
-        "about": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem maxime commodi omnis minima officiis. Doloribus sit maxime sapiente quo dolor voluptates cupiditate sunt impedit dicta. Tempore dolorem autem neque sequi?",
-        "birthdate":"2041-12-29",
-        "country":"Korean",
-        "pic":"image/client.png"
     }
 ]
