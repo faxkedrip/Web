@@ -57,7 +57,259 @@
     },
     {
         "id": "3",
-        "name": "AAA_BBB",
+        "name": "wertyu",
+        "category": "Үлгэр",
+        "author": "Songbird" ,
+        "author_id": "10",
+        "price": 40000,
+        "too_shirheg": 5,
+        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ipsa odit. Quis illo nobis consequatur, assumenda neque mollitia modi deserunt cumque quo omnis exercitationem consectetur expedita autem delectus quos nam!",
+        "pub_date": "2023-05-17",
+        "comments": [
+            {
+                "username": "Shinee",
+                "email": "Hello@hello.com",
+                "comment": "Ystoi gogo nom bn.",
+                "rating": 5
+            },
+            {
+
+                "username": "ABCDEF",
+                "email": "halo@hola.com",
+                "comment": "Meh.",
+                "rating": 2
+            }
+        ],
+        "ov_rating": 0,
+        "pic":"image/book9.png"
+    },
+    {
+        "id": "4",
+        "name": "nnnn_uuuuu",
+        "category": "Шинжлэх ухаан",
+        "author": "Shinee" ,
+        "author_id": "5",
+        "price": 40000,
+        "too_shirheg": 5,
+        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ipsa odit. Quis illo nobis consequatur, assumenda neque mollitia modi deserunt cumque quo omnis exercitationem consectetur expedita autem delectus quos nam!",
+        "pub_date": "2023-05-17",
+        "comments": [
+            {
+                "username": "Shinee",
+                "email": "Hello@hello.com",
+                "comment": "Ystoi gogo nom bn.",
+                "rating": 5
+            },
+            {
+
+                "username": "ABCDEF",
+                "email": "halo@hola.com",
+                "comment": "Meh.",
+                "rating": 2
+            }
+        ],
+        "ov_rating": 0,
+        "pic": "image/book10.png"
+    },
+    {
+        "id": "5",
+        "name": "APPLE",
+        "category": "Хэл шинжлэл",
+        "author": "Mayer" ,
+        "author_id": "6",
+        "price": 40000,
+        "too_shirheg": 5,
+        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ipsa odit. Quis illo nobis consequatur, assumenda neque mollitia modi deserunt cumque quo omnis exercitationem consectetur expedita autem delectus quos nam!",
+        "pub_date": "2023-05-17",
+        "comments": [
+            {
+                "username": "Shinee",
+                "email": "Hello@hello.com",
+                "comment": "Ystoi gogo nom bn.",
+                "rating": 5
+            },
+            {
+
+                "username": "ABCDEF",
+                "email": "halo@hola.com",
+                "comment": "Meh.",
+                "rating": 2
+            }
+        ],
+        "ov_rating": 0,
+        "pic":"image/book11.png"
+    },
+    {
+        "id": "6",
+        "name": "JavaScript",
+        "category": "Үлгэр",
+        "author": "Songbird" ,
+        "author_id": "10",
+        "price": 40000,
+        "too_shirheg": 5,
+        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ipsa odit. Quis illo nobis consequatur, assumenda neque mollitia modi deserunt cumque quo omnis exercitationem consectetur expedita autem delectus quos nam!",
+        "pub_date": "2023-05-17",
+        "comments": [
+            {
+                "username": "Shinee",
+                "email": "Hello@hello.com",
+                "comment": "Ystoi gogo nom bn.",
+                "rating": 5
+            },
+            {
+
+                "username": "ABCDEF",
+                "email": "halo@hola.com",
+                "comment": "Meh.",
+                "rating": 2
+            }
+        ],
+        "ov_rating": 0,
+        "pic":"image/book12.png"
+    },
+    {
+        "id": "7",
+        "name": "Pepsi",
+        "category": "Шинжлэх ухаан",
+        "author": "Shinee" ,
+        "author_id": "5",
+        "price": 40000,
+        "too_shirheg": 5,
+        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ipsa odit. Quis illo nobis consequatur, assumenda neque mollitia modi deserunt cumque quo omnis exercitationem consectetur expedita autem delectus quos nam!",
+        "pub_date": "2023-05-17",
+        "comments": [
+            {
+                "username": "Shinee",
+                "email": "Hello@hello.com",
+                "comment": "Ystoi gogo nom bn.",
+                "rating": 5
+            },
+            {
+
+                "username": "ABCDEF",
+                "email": "halo@hola.com",
+                "comment": "Meh.",
+                "rating": 2
+            }
+        ],
+        "ov_rating": 0,
+        "pic": "image/book1.jpg"
+    },
+    {
+        "id": "8",
+        "name": "HAHAHAH",
+        "category": "Хэл шинжлэл",
+        "author": "Mayer" ,
+        "author_id": "6",
+        "price": 40000,
+        "too_shirheg": 5,
+        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ipsa odit. Quis illo nobis consequatur, assumenda neque mollitia modi deserunt cumque quo omnis exercitationem consectetur expedita autem delectus quos nam!",
+        "pub_date": "2023-05-17",
+        "comments": [
+            {
+                "username": "Shinee",
+                "email": "Hello@hello.com",
+                "comment": "Ystoi gogo nom bn.",
+                "rating": 5
+            },
+            {
+
+                "username": "ABCDEF",
+                "email": "halo@hola.com",
+                "comment": "Meh.",
+                "rating": 2
+            }
+        ],
+        "ov_rating": 0,
+        "pic":"image/book2.jpg"
+    },
+    {
+        "id": "9",
+        "name": "Oh my my",
+        "category": "Үлгэр",
+        "author": "Songbird" ,
+        "author_id": "10",
+        "price": 40000,
+        "too_shirheg": 5,
+        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ipsa odit. Quis illo nobis consequatur, assumenda neque mollitia modi deserunt cumque quo omnis exercitationem consectetur expedita autem delectus quos nam!",
+        "pub_date": "2023-05-17",
+        "comments": [
+            {
+                "username": "Shinee",
+                "email": "Hello@hello.com",
+                "comment": "Ystoi gogo nom bn.",
+                "rating": 5
+            },
+            {
+
+                "username": "ABCDEF",
+                "email": "halo@hola.com",
+                "comment": "Meh.",
+                "rating": 2
+            }
+        ],
+        "ov_rating": 0,
+        "pic":"image/book3.jpg"
+    },
+    {
+        "id": "10",
+        "name": "Pjifejjfie",
+        "category": "Шинжлэх ухаан",
+        "author": "Shinee" ,
+        "author_id": "5",
+        "price": 40000,
+        "too_shirheg": 5,
+        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ipsa odit. Quis illo nobis consequatur, assumenda neque mollitia modi deserunt cumque quo omnis exercitationem consectetur expedita autem delectus quos nam!",
+        "pub_date": "2023-05-17",
+        "comments": [
+            {
+                "username": "Shinee",
+                "email": "Hello@hello.com",
+                "comment": "Ystoi gogo nom bn.",
+                "rating": 5
+            },
+            {
+
+                "username": "ABCDEF",
+                "email": "halo@hola.com",
+                "comment": "Meh.",
+                "rating": 2
+            }
+        ],
+        "ov_rating": 0,
+        "pic": "image/book4.jpg"
+    },
+    {
+        "id": "11",
+        "name": "nahhhh",
+        "category": "Хэл шинжлэл",
+        "author": "Mayer",
+        "author_id": "6",
+        "price": 40000,
+        "too_shirheg": 5,
+        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ipsa odit. Quis illo nobis consequatur, assumenda neque mollitia modi deserunt cumque quo omnis exercitationem consectetur expedita autem delectus quos nam!",
+        "pub_date": "2023-05-17",
+        "comments": [
+            {
+                "username": "Shinee",
+                "email": "Hello@hello.com",
+                "comment": "Ystoi gogo nom bn.",
+                "rating": 5
+            },
+            {
+
+                "username": "ABCDEF",
+                "email": "halo@hola.com",
+                "comment": "Meh.",
+                "rating": 2
+            }
+        ],
+        "ov_rating": 0,
+        "pic":"image/book5.jpg"
+    },
+    {
+        "id": "12",
+        "name": "Oh my my-2",
         "category": "Үлгэр",
         "author": "Songbird" ,
         "author_id": "10",
