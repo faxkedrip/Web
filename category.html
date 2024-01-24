@@ -28,9 +28,21 @@
             <li><a href="#">Үнээр(Өсөхөөр)</a></li>
             <li><a href="#">Үнээр(Буурах)</a></li>
             <li><a href="#">Үнэлгээгээр</a></li>
-            <li class="category" style="margin-left: 10rem;"><a href="#"><img src="image/menu.png" style="width: 1rem;"></a></li>
+            <li id="categoryButton" class="category" style="margin-left: 10rem;">
+                <a href="#"><img src="image/menu.png" style="width: 1rem;"></a>
+            </li>
+            
         </ul>
     </nav>
+
+    <aside class="sidebar">
+        <h2>Sidebar Menu</h2>
+        <ul>
+            <li><a href="#">Category 1</a></li>
+            <li><a href="#">Category 2</a></li>
+            <li><a href="#">Category 3</a></li>
+        </ul>
+    </aside>
 
     <section>
         <h2>Most Viewed Books</h2>
@@ -231,5 +243,20 @@
             <p>Copyright &copy; 2024 Az Khur All Rights Reserved.</p>
         </section>
     </footer>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const categoryButton = document.getElementById('categoryButton');
+            const sidebar = document.querySelector('.sidebar');
+            const mainSection = document.querySelector('section');
+
+            categoryButton.addEventListener('click', function () {
+                sidebar.classList.toggle('active'); 
+                mainSection.style.marginRight = sidebar.classList.contains('active') ? '20%' : '0';
+            });
+        });
+    </script>
+
 </body>
 </html>

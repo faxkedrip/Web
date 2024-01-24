@@ -122,3 +122,57 @@ footer ul li a:hover {
 h2 ,p{
     text-align: center;
 }
+
+.sidebar {
+    background: #eee;
+    padding: 1rem;
+    width: 20%;
+    position: absolute;
+    height: 100%;
+    overflow-y: auto;
+    display: block;
+    right: -20%;
+    transition: right 0.3s ease;
+}
+
+.sidebar.active {
+    right: 0%;
+    width: 30%;
+}
+
+.sidebar h2 {
+    font-size: 1.8rem;
+    color: var(--black);
+    margin-bottom: 1rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 0.5rem;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1.5rem;
+    display: block;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    background: #fff;
+    transition: background 0.3s;
+}
+
+.sidebar a:hover {
+    background: var(--dark-orange);
+    color: #fff;
+}
+
+.kart{
+    flex: 1;
+    padding: 5rem 9%;
+}
