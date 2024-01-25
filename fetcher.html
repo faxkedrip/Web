@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Library API Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <div id="bookList"></div>
+
+    <script>
+        $(document).ready(function () {
+            // Function to fetch books from Open Library API
+            function fetchBooks() {
+                const apiUrl = 'https://openlibrary.org/subjects/science_fiction.json?limit=5'; // Example: Fetch science fiction books
+
+                // Fetch data from the API
+                $.ajax({
+                    url: apiUrl,
+                    method: 'GET',
+                    dataType: 'json',
+                    success: function (data) {
+                        displayBooks(data);
+                    },
+                    error: function (error) {
+                        console.error('Error fetching books:', error);
+                    }
+                });
+            }
+
+            // Function to display books on the webpage
+            function displayBooks(data) {
+                const bookListContainer = $('#bookList');
+
+                // Clear existing content
+                bookListContainer.empty();
+
+                // Check if the response contains works
+                if (data.works) {
+                    // Loop through the works and display book details
+                    data.works.forEach(work => {
+                        const title = work.title;
+                        const author = work.authors ? work.authors[0].name : 'Unknown Author';
+                        const coverUrl = `https://covers.openlibrary.org/b/id/${work.cover_id}-M.jpg`;
+
+                        // Create a div for each book
+                        const bookDiv = $('<div class="book">');
+                        bookDiv.append(`<img src="${coverUrl}" alt="${title}">`);
+                        bookDiv.append(`<h3>${title}</h3>`);
+                        bookDiv.append(`<p>Author: ${author}</p>`);
+
+                        // Append the book div to the container
+                        bookListContainer.append(bookDiv);
+                    });
+                } else {
+                    console.error('No works found in the API response.');
+                }
+            }
+
+            // Call the function to fetch and display books
+            fetchBooks();
+        });
+    </script>
+</body>
+</html>

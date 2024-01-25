@@ -18,8 +18,8 @@
                     <img src="image/search_logo.png" alt="Search Logo" class="search-logo">
                 </label>
             </form>
-                <img src="image/search_logo.png" alt="Search Logo" class="search-logo-solo">
-                <img src="image/shopping_cart.png" alt="Search Logo" class="shopping_cart">
+            <img src="image/search_logo.png" alt="Search Logo" class="search-logo-solo">
+            <a href="cart.html"><img src="image/shopping_cart.png" alt="Search Logo" class="shopping_cart"></a>
         </article>
     </header>
 
@@ -32,7 +32,6 @@
             <li id="categoryButton" class="category" style="margin-left: 10rem;">
                 <a href="#"><img src="image/menu.png" style="width: 1rem;"></a>
             </li>
-            
         </ul>
     </nav>
 
@@ -46,10 +45,18 @@
     </aside>
 
     <section id="bookSection">
-        <h2>Most Viewed Books</h2>
-        <p>Description of the most viewed category.</p>
-        <div class="book-list">
+        <h2>Filtered Books</h2>
+        <div id="categoryFilters">
+            <label for="categorySelect">Select Category:</label>
+            <select id="categorySelect">
+                <option value="science_fiction">Science Fiction</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="history">History</option>
+                <!-- Add more categories as needed -->
+            </select>
+            <button id="applyFilter">Apply Filter</button>
         </div>
+        <div class="book-list" id="bookList"></div>
     </section>
 
     <footer>
@@ -93,16 +100,78 @@
         <section class="icon-links">
             <div class="iconss">
                 <a href="#"><img src="image/facebook_logo.png" alt="facebook icon"></a>
-                <a href="#"><img src="image/twitter_logo.png"  alt="twt"></a>
-                <a href="#"><img src="image/youtube_logo.png"  alt="yt"></a>
+                <a href="#"><img src="image/twitter_logo.png" alt="twt"></a>
+                <a href="#"><img src="image/youtube_logo.png" alt="yt"></a>
                 <a href="#"><img src="image/instagram_logo.png" alt="inst"></a>
             </div>
             <p>Copyright &copy; 2024 Az Khur All Rights Reserved.</p>
         </section>
     </footer>
 
+    <script>
+        $(document).ready(function () {
+            
+            // Function to fetch books from Open Library API based on the selected category
+            function fetchBooks() {
+                const selectedCategory = $('#categorySelect').val();
+                const apiUrl = `https://openlibrary.org/subjects/${selectedCategory}.json?limit=20`;
 
-    <script src="js/fetchh.js"></script>
+                $.ajax({
+                    url: apiUrl,
+                    method: 'GET',
+                    dataType: 'json',
+                    success: function (data) {
+                        displayBooks(data);
+                    },
+                    error: function (error) {
+                        console.error('Error fetching books:', error);
+                    }
+                });
+            }
 
+            // Function to generate a random price within a specified range
+            function generateRandomPrice(min, max) {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+
+            // Function to display books on the webpage
+            function displayBooks(data) {
+                const bookListContainer = $('#bookList');
+
+                // Clear existing content
+                bookListContainer.empty();
+
+                // Check if the response contains works
+                if (data.works) {
+                    data.works.forEach(work => {
+                        const title = work.title;
+                        const author = work.authors ? work.authors[0].name : 'Unknown Author';
+                        const coverUrl = `https://covers.openlibrary.org/b/id/${work.cover_id}-M.jpg`;
+
+                        // Generate a random price between $5 and $50
+                        const randomPrice = generateRandomPrice(10000, 50000);
+
+                        const bookDiv = $('<div class="book">');
+                        bookDiv.append(`<img src="${coverUrl}" alt="${title}">`);
+                        bookDiv.append(`<h3>${title}</h3>`);
+                        bookDiv.append(`<p>Author: ${author}</p>`);
+                        bookDiv.append(`<p>Price: ${randomPrice}₮</p>`);
+                        bookDiv.append(`<button class="btn" onclick="addToCart('${title}', ${randomPrice})"> ADD to cart</button>`);
+
+                        bookListContainer.append(bookDiv);
+                    });
+                } else {
+                    console.error('No works found in the API response.');
+                }
+            }
+
+            // Event handler for applying the filter
+            $('#applyFilter').on('click', fetchBooks);
+
+            // Initial fetch with default category
+            fetchBooks('science_fiction');
+        });
+        
+    </script>
 </body>
 </html>

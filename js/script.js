@@ -83,3 +83,9 @@ var swiper = new Swiper(".reviews-slider", {
     },
   },
 });
+
+function addToCart(element) {
+  const productId = element.getAttribute('data-product-id');
+  this.cartItems.push({ id: productId, name: name, price: itemPrice });
+  this.render();
+}
